@@ -9,3 +9,11 @@ def minimum(lst):
             min=a
     return min
 print(minimum([1,3,44,"abhi",555667,72,100]))
+
+#Write a Python program to remove duplicates from a list
+lst=['abc', 'xyz', 'aba', '1221',22,44,55,22,'abc']
+
+for value in lst:
+	if lst.count(value)>1:
+		lst.remove(value)
+print(lst)
