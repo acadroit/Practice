@@ -17,3 +17,14 @@ for value in lst:
 	if lst.count(value)>1:
 		lst.remove(value)
 print(lst)
+
+#Write a Python program to count the number of strings where the string length is 2 or more and the first and last character are same from a given list of strings.
+lst=['abc', 'xyz', 'aba', '1221']
+
+def same(lst):
+	new_lst=[]
+	for n in lst:
+		if len(n)>2 and n[0]==n[-1]:
+			new_lst.append(n)	
+	print(new_lst)
+same(lst)
