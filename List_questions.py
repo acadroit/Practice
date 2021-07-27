@@ -28,3 +28,19 @@ def same(lst):
 			new_lst.append(n)	
 	print(new_lst)
 same(lst)
+
+
+#Write a python program to count character occurrences: 
+l=[1,2,3,1,2,2,5,6]
+
+def count(lst):
+    repeat={}
+    for value in lst:
+        a=l.count(value)
+        b=value
+        repeat.update({b:a})
+    return repeat
+print(count(l))
+
+
+
