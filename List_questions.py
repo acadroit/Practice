@@ -42,5 +42,11 @@ def count(lst):
     return repeat
 print(count(l))
 
+#sorting a list with sorted function 
+sample_list = [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
 
+def second_element(elem):
+	return elem[1]
 
+sort=sorted(sample_list, key=second_element)
+print(sort)
