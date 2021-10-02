@@ -82,7 +82,7 @@ obj1=Comp(list2,"a","e")
 print(obj1.compare())
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #Converting a list into a nested list
-l=["harry", 30, "shivam", 50, "abhi", 40,"rishabh, 50"]
+l=["harry", 30, "shivam", 50, "abhi", 40,"rishabh", 50]
 nl = [l[i:i+2] for i in range(0, len(l), 2)]
 print(nl)
 
