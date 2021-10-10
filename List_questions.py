@@ -87,6 +87,15 @@ nl = [l[i:i+2] for i in range(0, len(l), 2)]
 print(nl)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#common elements betweeb two lists
 
+l=[1,2,34,5,67,8,8,7]
+m=[2,3,4,5,6,8,8,9]
+def common(l,m):
+    l_set=set(l)
+    m_set=set(m)
+    cn=l_set.intersection(m_set)
+    return cn
+print(common(l,m))
 
 
