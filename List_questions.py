@@ -97,5 +97,15 @@ def common(l,m):
     cn=l_set.intersection(m_set)
     return cn
 print(common(l,m))
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#Converting list into nested list
+
+l=["harry", 30, "shivam", 50, "abhi", 40,"rishabh", 50,"vibhor",60]
+#using normal loop
+for i in range(0, len(l),2):
+    print(l[i:i+2])
+#using list comprehension
+k=[l[i:i+2] for i in range(0, len(l),2)]
+print(k)
 
