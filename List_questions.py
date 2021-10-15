@@ -109,3 +109,20 @@ for i in range(0, len(l),2):
 k=[l[i:i+2] for i in range(0, len(l),2)]
 print(k)
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#for knowing the second lowest grade
+
+grade=[['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41.0], ['Harsh', 39.0]]
+min_mark=min(x[1] for x in grade)
+lowest_graders=[x for x in grade if x[1]>min_mark]
+sec_min=min(x[1] for x in lowest_graders)
+sec_low_graders=[x for x in lowest_graders if x[1]==sec_min]
+sec_low_graders.sort()
+for x in sec_low_graders:
+    print(x[0])
+
+
+
+
+
+
