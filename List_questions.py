@@ -121,7 +121,15 @@ sec_low_graders.sort()
 for x in sec_low_graders:
     print(x[0])
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#Converting list to list of dictionaries
+#CASE 1:
+    #two lists are there, one has values and one has key.
 
+l=["abhi",22,"vishu",44,"ajay",55,"raj",66]
+m=["name","marks"]
+t=[{m[0]:l[i],m[1]:l[i+1]}for i in range(0,len(l),2)]
+print(t)
 
 
 
